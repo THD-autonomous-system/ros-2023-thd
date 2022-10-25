@@ -16,7 +16,7 @@ if [[ $1 = "--nvidia" ]] || [[ $1 = "-n" ]]
                 -v $ROOT_DIR/turtlebot3_ws:/turtlebot3_ws \
                --net=host \
                --privileged \
-               --name turtle-bot3 turtle-bot3-img
+               --name ros-turtle ros-turtle-img
 
 else
 
@@ -30,6 +30,5 @@ else
                 -v $ROOT_DIR/turtlebot3_ws:/turtlebot3_ws \
                --net=host \
                --privileged \
-               --name turtle-bot3 turtle-bot3-img
+               --name ros-turtle ros-turtle-img
 fi
-
