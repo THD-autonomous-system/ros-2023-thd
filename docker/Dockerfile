@@ -2,6 +2,8 @@ ARG from
 
 FROM ${from}
 
+ENV DEBIAN_FRONTEND = noninteractive
+
 LABEL Dmitrii Dobriborsci "dobriy06@gmail.com"
 
 # Timezone Configuration
