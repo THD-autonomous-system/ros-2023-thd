@@ -94,17 +94,16 @@ ENV LD_LIBRARY_PATH /usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu${LD_LIBRAR
 
 
 
-RUN echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc                    
+# RUN echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc                    
 RUN echo "source /opt/ros/noetic/setup.bash"  >> ~/.bashrc 
 
 ENV source /opt/ros/noetic/setup.bash
 
 
 RUN echo 'source ~/../turtlebot3_ws/devel/setup.bash' >> ~/.bashrc \
-   && echo 'source ~/../turtlebot3_ws/devel/setup.bash' >> ~/.bashrc \
-#    && echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/../turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc \
-   && echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc \
-   && echo 'export ROS_MASTER_URI=http://192.168.50.62:11311' >> ~/.bashrc \
-   && echo 'export ROS_HOSTNAME=192.168.50.62' >> ~/.bashrc
+    && echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+#    && echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH ~/../turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc \
+#    && echo 'export ROS_MASTER_URI=http://192.168.50.62:11311' >> ~/.bashrc \
+#    && echo 'export ROS_HOSTNAME=192.168.50.62' >> ~/.bashrc
 
 # Need to change your IP in the variables $ROS_MASTER_URI and $ROS_HOSTNAME
