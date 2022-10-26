@@ -79,11 +79,11 @@ Docker is an open platform for developing, shipping, and running applications. D
 
 This means that we must first create the environment in which our program will run. We already have a ready-made environment and we just need to building it:
 
-    ./buid_docker.sh
+    sudo ./buid_docker.sh
 
 Or if you have an Nvidida video card:
 
-    ./buid_docker.sh -n
+    sudo ./buid_docker.sh -n
 
 Next will begin the process of building. If the process ends incorrectly or with an error, you must start building again.
 
