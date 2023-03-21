@@ -1,9 +1,9 @@
-# homeworks
-Here you will find your homework
+# Description
+Here you will find your exercises
 
 ------
 
-## HOMEWORK 1
+## Exercise 1
 
 Install Ubuntu on your PC. You can find guide how do that [HERE](https://github.com/MusubaPy/Install-Ubuntu-guide)
 
@@ -11,7 +11,7 @@ P.S. You can use other versions of Ubuntu and software, but this may not guarant
 
 ------
 
-## HOMEWORK 2
+## Exercise 2
 
 ### 1. Install git
 
