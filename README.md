@@ -15,7 +15,7 @@ P.S. You can use other versions of Ubuntu and software, but this may not guarant
 
 ### 1. Install git
 
-You should install the git program in your Ubuntu OS.
+You should install the GIT in your Ubuntu OS.
 
 Open the terminal (**Ctrl+Alt+T**) and enter the following commands in sequence:
 
@@ -34,7 +34,7 @@ The _git clone_ command allows you to download files from a remote server to you
 You need to go into the downloaded folder and go into the docker folder.
 
 
-    cd homeworks/docker
+    cd ros-2023-thd/docker
 
 If you don't have an Nvidia graphics card, run the command:
 
@@ -88,3 +88,16 @@ Or if you have an Nvidida video card:
 Next will begin the process of building. If the process ends incorrectly or with an error, you must start building again.
 
 But if you can't end the process correctly even after several uploads, open the Dockerfile with a text editor and comment out lines 59 and 61.
+
+### 4. Run Docker
+
+To execute the docker container use command:
+
+    sudo ./run_docker.sh
+Or if you have an Nvidida video card:
+
+    sudo ./run_docker.sh -n
+    
+If you need additional terminal inside of the Docker open new windows in the terminal (Ctrl+Shift+T) and use command
+
+    sudo ./into_docker.sh
