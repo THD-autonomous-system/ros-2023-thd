@@ -59,7 +59,7 @@ RUN apt-get update && apt-get install -y ros-noetic-desktop-full \
 
 
 
-RUN pip3 install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+#RUN pip3 install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 
 ## GUI tunnel from docker
 RUN dpkg --add-architecture i386 && \
