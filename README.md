@@ -33,17 +33,17 @@ If you do not have an SSH key configured, the git will return an error, this can
 
 1. In the Terminal run the command:
 
-	ssh-keygen
+	```ssh-keygen```
 
 Press ENTER several times when required
 
 2. Go to
 	
-	cd /.ssh/ 
+	```cd /.ssh/```
 	
-3. Open the file '''id_rsa.pub''' and copy the text inside
+3. Open the file id_rsa.pub and copy the text inside
 	
-	gedit id_rsa.pub
+	```gedit id_rsa.pub```
 	
 4. Open Github in your web-browser. Go to "Profile-Settings-SSH and GPG keys" and assign new SSH key.
 
