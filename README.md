@@ -27,7 +27,25 @@ Open the terminal (**Ctrl+Alt+T**) and enter the following commands in sequence:
 
 The _git clone_ command allows you to download files from a remote server to your local computer. Therefore, the _git clone_ command is specified first, followed by a link to the remote repository.
 
-    git clone https://github.com/THD-autonomous-system/homeworks.git
+    git clone git@github.com:THD-autonomous-system/ros-2023-thd.git
+    
+If you do not have an SSH key configured, the git will return an error, this can be corrected as follows:
+
+1. In the Terminal run the command:
+
+	ssh-keygen
+
+Press ENTER several times when required
+
+2. Go to
+	
+	cd /.ssh/ 
+	
+3. Open the file '''id_rsa.pub''' and copy the text inside
+	
+	gedit id_rsa.pub
+	
+4. Open Github in your web-browser. Go to "Profile-Settings-SSH and GPG keys" and assign new SSH key.
 
 ### 3. Install Docker
 
@@ -79,11 +97,11 @@ Docker is an open platform for developing, shipping, and running applications. D
 
 This means that we must first create the environment in which our program will run. We already have a ready-made environment and we just need to building it:
 
-    sudo ./buid_docker.sh
+    sudo ./build_docker.sh
 
 Or if you have an Nvidida video card:
 
-    sudo ./buid_docker.sh -n
+    sudo ./build_docker.sh -n
 
 Next will begin the process of building. If the process ends incorrectly or with an error, you must start building again.
 
@@ -98,6 +116,6 @@ Or if you have an Nvidida video card:
 
     sudo ./run_docker.sh -n
     
-If you need additional terminal inside of the Docker open new windows in the terminal (Ctrl+Shift+T) and use command
+If you need additional terminal inside of the Docker open new window in the terminal (Ctrl+Shift+T) and use command
 
     sudo ./into_docker.sh
