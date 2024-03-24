@@ -5,7 +5,7 @@ FROM ${from}
 LABEL Dmitrii Dobriborsci "dobriy06@gmail.com"
 
 # Timezone Configuration
-ENV TZ=Europe/Moscow
+ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ENV DEBIAN_FRONTEND = noninteractive
 
