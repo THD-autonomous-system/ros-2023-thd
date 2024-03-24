@@ -57,10 +57,7 @@ You need to go into the downloaded folder and go into the docker folder.
 If you don't have an Nvidia graphics card, run the command:
 
     ./install_docker.bash
-    
-If you have an Nvidia graphics card, run the command:
 
-    ./install_docker.bash -n
     
 The installation of docker should complete correctly. If docker does not install, it is most likely an error in your utility (apt) settings for downloading and updating from remote repositories. This is a problem you should solve on your own.
 
@@ -99,10 +96,6 @@ This means that we must first create the environment in which our program will r
 
     sudo ./build_docker.sh
 
-Or if you have an Nvidida video card:
-
-    sudo ./build_docker.sh -n
-
 Next will begin the process of building. If the process ends incorrectly or with an error, you must start building again.
 
 But if you can't end the process correctly even after several uploads, open the Dockerfile with a text editor and comment out lines 59 and 61.
@@ -112,9 +105,6 @@ But if you can't end the process correctly even after several uploads, open the 
 To execute the docker container use command:
 
     sudo ./run_docker.sh
-Or if you have an Nvidida video card:
-
-    sudo ./run_docker.sh -n
     
 If you need additional terminal inside of the Docker open new window in the terminal (Ctrl+Shift+T) and use command
 
