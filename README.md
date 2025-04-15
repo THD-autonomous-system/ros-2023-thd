@@ -56,7 +56,7 @@ You need to go into the downloaded folder and go into the docker folder.
 
 If you don't have an Nvidia graphics card, run the command:
 
-    ./install_docker.bash
+    ./install_docker.sh
 
     
 The installation of docker should complete correctly. If docker does not install, it is most likely an error in your utility (apt) settings for downloading and updating from remote repositories. This is a problem you should solve on your own.
