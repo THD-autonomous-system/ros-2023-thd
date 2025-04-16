@@ -53,8 +53,7 @@ You need to go into the downloaded folder and go into the docker folder.
 
 
     cd ros-2023-thd/docker
-
-If you don't have an Nvidia graphics card, run the command:
+Now, run the command:
 
     ./install_docker.sh
 
@@ -105,6 +104,10 @@ But if you can't end the process correctly even after several uploads, open the 
 To execute the docker container use command:
 
     sudo ./run_docker.sh
+
+To build the workspace navigate to turtlebot3_ws and execute script ```build.bash```
+
+```bash build.bash```
     
 If you need additional terminal inside of the Docker open new window in the terminal (Ctrl+Shift+T) and use command
 
